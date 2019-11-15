@@ -1,0 +1,11 @@
+ps -ef|grep sqlldr
+ps -参数|grep 进程名
+
+
+ps -ef |grep -v grep |grep -E "policy3client -d|IdcServer 12345|MidWatchDog.sh"//搜索 "policy3client -d" 或者"IdcServer 12345" 或者"MidWatchDog.sh"
+
+ps -eo pid,lstart,cmd 查看进程启动时间(带日期)
+
+ps -eo lstart,cmd
+
+ps -efL 可以查看到进程的线程情况( ps auxH 也可以)
